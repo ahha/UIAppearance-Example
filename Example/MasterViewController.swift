@@ -15,6 +15,9 @@ class MasterViewController: UITableViewController {
 
     override func awakeFromNib() {
         super.awakeFromNib()
+        
+        // This is how you remove the text for the back button that will go back to this view
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .Plain, target: nil, action: nil);
     }
 
     override func viewDidLoad() {
